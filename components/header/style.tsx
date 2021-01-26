@@ -9,9 +9,6 @@ export const HeaderPage = styled.div`
  justify-content: space-evenly;
  align-items: center;
  position: fixed;
- ${media.lessThan("small")`
-  position: sticky;
- `}
 `
 
 export const HeaderPageImg = styled.div`
@@ -28,6 +25,12 @@ export const HeaderPageTitle = styled.div`
   display: flex;
   flex-grow: 1;
   justify-content: center;
+  ${media.lessThan("small")`
+    h3 {
+      font-size: 18px;
+    }
+ 
+ `}
 `
 
 export const HeaderPageIcon = styled.div`

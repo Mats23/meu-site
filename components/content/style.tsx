@@ -8,7 +8,7 @@ export const ContentPage = styled.div`
   flex-direction: column;
   text-align: start;
   width: 80%;
-  height: 55.5rem;
+  height: calc(100vh - 82px);
 `
 
 export const ContentPageTitle = styled.div`

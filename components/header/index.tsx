@@ -15,7 +15,6 @@ export default function Header() {
 
 
   useEffect(() => {
-    console.log(localStorage.getItem("bob"))
     if (localStorage.getItem("bob") !== null) {
       useBob(localStorage.getItem("bob"));
     }
