@@ -1,6 +1,6 @@
 
 import React, { useState } from 'react';
-import { IconsMenu, Label, TabMenu, Ul } from './style';
+import { IconsMenu,  Menu, TabMenu } from './style';
 import { useRouter } from 'next/router'
 import { motion } from 'framer-motion';
 
@@ -43,31 +43,29 @@ export default function TabNavigation() {
   return(
     <TabMenu>
       <IconsMenu>
-        <Ul>
-          <li className="menu">
-            <motion.div className="menu__tab"
-              onClick={() => animate()}
-              animate={rotate}
-            >
-              <img src="./plus.svg" alt="plus"/>
-            </motion.div>
-            <motion.div className="menu__item__home"
-              animate={actionLeft}
-              onClick={() => handlClick("/")}
+        <Menu>
+          <motion.div className="menu__tab"
+            onClick={() => animate()}
+            animate={rotate}
+          >
+            <img src="./plus.svg" alt="plus"/>
+          </motion.div>
+          <motion.div className="menu__item__home"
+            animate={actionLeft}
+            onClick={() => handlClick("/")}
 
-            >
-              <img src="./home.svg" 
-                  alt="home" />
-            </motion.div>
-            <motion.div className="menu__item__news"
-              animate={actionRigth}
-              onClick={() => handlClick("/posts")}
-            >
-              <img src="./news.svg" 
-                  alt="news" />
-            </motion.div>
-          </li>
-        </Ul>
+          >
+            <img src="./home.svg" 
+                alt="home" />
+          </motion.div>
+          <motion.div className="menu__item__news"
+            animate={actionRigth}
+            onClick={() => handlClick("/posts")}
+          >
+            <img src="./news.svg" 
+                alt="news" />
+          </motion.div>
+        </Menu>
       </IconsMenu>
     </TabMenu>
   )

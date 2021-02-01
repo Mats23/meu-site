@@ -15,9 +15,15 @@ export default function Header() {
 
 
   useEffect(() => {
-    if (localStorage.getItem("bob") !== null) {
-      useBob(localStorage.getItem("bob"));
+    if (sessionStorage.getItem("bob") !== null) {
+      useBob(sessionStorage.getItem("bob"));
     }
+
+    setInterval(() => {
+      if (sessionStorage.getItem("bob") !== null) {
+        sessionStorage.clear();
+      }
+    },30000)
   });
   
   const handleTap = () => {
@@ -36,7 +42,7 @@ export default function Header() {
         rotate: [0, 0, 270, 270, 0],
         borderRadius: ["20%", "20%", "50%", "50%", "20%"],
       })
-      localStorage.setItem("bob","./bob2.svg")
+      sessionStorage.setItem("bob","./bob2.svg")
     }
   }
 

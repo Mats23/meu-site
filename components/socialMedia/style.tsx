@@ -5,9 +5,9 @@ import media from 'styled-media-query';
 export const WebSites = styled.div`
   display: flex;
   justify-content: space-evenly;
-  flex-direction: row;
   padding: 5%;
   height: 7.5rem;
+  width: 100%;
 
   ${media.greaterThan("huge")`
      height: 21.5rem;

@@ -7,78 +7,66 @@ import { flexCenter } from '../cssUtils';
 
 
 export const TabMenu = styled.div`
-  /* background-color: #98D2DC; */
-  bottom: 0;
-  height: 3rem;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  /* box-shadow: 0 1px 4px 1px grey; */
-  /* position: sticky; */
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
   img {
     width: 25px;
     cursor: pointer;
   }
+  ${media.lessThan("small")`
+    position: relative;
+  `}
 
 `
 
 export const IconsMenu = styled.div`
   display: flex;
-  flex-direction: row;
-  width: 50%;
-  justify-content: space-evenly;
+  width: 100%;
+  
   
 `
 
-export const Ul = styled.ul`
+export const Menu = styled.div`
   list-style: none;
   display: flex;
-  flex-direction: row;
   justify-content: center;
   margin: 0;
   padding: 0;
-  width: 25%;
+  width: 100%;
   margin-bottom: 20px;
-  ${media.lessThan("medium")`
-    width: 75%;
-  `
-  }
- 
-  .menu {
-
+  .menu__tab {
+    width: 50px;
+    height: 50px;
+    background-color: #98D2DC;
+    border-radius: 100%;
     ${flexCenter}
-    .menu__tab {
-      width: 50px;
-      height: 50px;
-      background-color: #98D2DC;
-      border-radius: 100%;
-      ${flexCenter}
-      position: absolute;
-      z-index:2;
-
-    }
-    .menu__item__home {
-      background-color: #98D2DC;
-      width: 50px;
-      height: 50px;
-      border-radius: 100%;
-      ${flexCenter}
-      position: absolute;
-      z-index:1;
-
-    }
-    .menu__item__news {
-      background-color: #98D2DC;
-      width: 50px;
-      height: 50px;
-      border-radius: 100%;
-      ${flexCenter}
-      position: relative;
-      z-index:0;
-
-
-    }
+    position: absolute;
+    z-index:2;
   }
+  
+  .menu__item__home {
+    background-color: #98D2DC;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    ${flexCenter}
+    position: absolute;
+    z-index:1;
+
+  }
+  .menu__item__news {
+    background-color: #98D2DC;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    ${flexCenter}
+    position: relative;
+    z-index:0;
+
+
+  }
+  
 
 `
 

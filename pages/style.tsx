@@ -11,17 +11,4 @@ export const MainHTML = styled.div`
     justify-content: space-evenly;
     width: 100%
   }
-
-  @media(max-width: 768px) {
-    height: 14%;
-  }
-
-  @media(min-width: 768px) and (max-width: 1023px) {
-    height: 20%;
-  }
-
-  @media (min-width: 1024px) {
-    height: 20%;
-
-  }
 `
