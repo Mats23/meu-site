@@ -1,7 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-import media from 'styled-media-query';
-import { flexCenter } from '../../components/cssUtils';
 
 
 export const PostList = styled.div`
@@ -12,7 +10,6 @@ export const PostList = styled.div`
   grid-column-gap: 24px;
   grid-row-gap: 24px;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  
-  
-
+  justify-items: center;
+  padding: 36px;
 `

@@ -10,12 +10,13 @@ export const TabMenu = styled.div`
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
+  margin-top: 20%;
   img {
     width: 25px;
     cursor: pointer;
   }
-  ${media.lessThan("small")`
-    position: relative;
+  ${media.greaterThan("large")`
+    bottom: 0;
   `}
 
 `

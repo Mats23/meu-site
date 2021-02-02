@@ -17,7 +17,7 @@ export default function News() {
               <h4>O Blog</h4>
             </div>
             <div className="card-body">
-              <p>Lorem ipsu</p>
+              <p>Lorem ipsu Lorem ipsu Lorem ipsu Lorem ipsu Lorem ipsu Lorem ipsuLorem ipsuLorem ipsuLorem ipsuLorem ipsuLorem ipsuLorem ipsuLorem ipsuLorem ipsu</p>
             </div>
           </div>
           <div className="card post__item">
@@ -25,7 +25,7 @@ export default function News() {
               <h4>O Blog</h4>
             </div>
             <div className="card-body">
-              <p>Lorem ipsu</p>
+            <p>Lorem ipsu Lorem ipsu Lorem ipsu Lorem ipsu Lorem ipsu Lorem ipsuLorem ipsuLorem ipsuLorem ipsuLorem ipsuLorem ipsuLorem ipsuLorem ipsuLorem ipsu</p>
             </div>
           </div>
           <div className="card post__item">
@@ -33,7 +33,7 @@ export default function News() {
               <h4>O Blog</h4>
             </div>
             <div className="card-body">
-              <p>Lorem ipsu</p>
+            <p>Lorem ipsu Lorem ipsu Lorem ipsu Lorem ipsu Lorem ipsu Lorem ipsuLorem ipsuLorem ipsuLorem ipsuLorem ipsuLorem ipsuLorem ipsuLorem ipsuLorem ipsu</p>
             </div>
           </div>
           <div className="card post__item">
@@ -41,7 +41,7 @@ export default function News() {
               <h4>O Blog</h4>
             </div>
             <div className="card-body">
-              <p>Lorem ipsu</p>
+            <p>Lorem ipsu Lorem ipsu Lorem ipsu Lorem ipsu Lorem ipsu Lorem ipsuLorem ipsuLorem ipsuLorem ipsuLorem ipsuLorem ipsuLorem ipsuLorem ipsuLorem ipsu</p>
             </div>
           </div>
           <div className="card post__item">
